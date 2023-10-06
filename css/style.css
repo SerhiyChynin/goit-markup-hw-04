@@ -125,6 +125,10 @@ address {
 
 .sec-one {
     background-color: #2E2F42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     text-align: center;
     margin: 0 auto;
     gap: 48px;
@@ -181,6 +185,21 @@ address {
     font-size: 16px;
     line-height: 1.5;
     color: #434455;
+}
+.wrap-icons{
+    position: relative;
+    margin-bottom: 8px;
+    width: 264px;
+    height: 112px;
+    border: 1px solid rgba(142, 143, 153, 1);
+    border-radius: 4px;
+    background-color: rgba(244, 244, 253, 1);
+}
+.social-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
