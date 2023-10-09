@@ -68,17 +68,26 @@ header {
     text-align: center;
 }
 .menu-list{  
+    position: relative;
     display: flex;
     align-items: center;
     gap: 40px;
     padding: 24px 0 24px 0;
     margin: 0;
 }
+.menu-list::after{
+    bottom: 0px;
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 4px;
+    background-color: #404BBF;
+    border-radius: 2px;
+}
 .nav,.nav ul {
     display: flex;
     align-items: center;
     flex-grow: 1;
-    /* gap: 40px; */
 }
 
 .nav li a {
