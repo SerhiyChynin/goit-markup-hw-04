@@ -75,7 +75,7 @@ header {
     padding: 24px 0 24px 0;
     margin: 0;
 }
-.menu-list:active::after{
+.menu-list::after{
     bottom: -1px;
     content: "";
     position: absolute;
@@ -165,6 +165,7 @@ address {
     color: #ffffff;
     font-weight: 500;
     cursor: pointer;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .btn:hover{
     background-color: #404BBF;
@@ -229,6 +230,7 @@ address {
 .sec-three ul li {
     background-color: #FFFFFF;
     text-align: center;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .sec-three ul li .social-icons-item{
@@ -237,6 +239,7 @@ address {
     height: 40px;
     background-color: rgba(77, 90, 229, 1);
     border-radius: 50%;
+    box-shadow: none;
 }
 
 .social-icons-member{
@@ -302,11 +305,25 @@ border-radius: 0px 0px 4px 4px
     color: #2E2F42;
     margin-bottom: 8px;
 }
-
+.list{
+    position: relative;
+}
 .sec-four ul li div{
     border-left: 1px solid #E7E9FC;
     border-right: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC;
+}
+.cover-text {
+    position: absolute;
+    width: 360px;
+    height: 300px;
+    top:0;
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+    color: rgba(244, 244, 253, 1);
+    background-color: rgba(77, 90, 229, 1);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .api-desc{
     padding: 32px 16px;
@@ -388,3 +405,6 @@ section{
     padding: 0;
     border: 0;
 }
+/* .hidden{
+    overflow: hidden;
+} */
