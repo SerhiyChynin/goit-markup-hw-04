@@ -11,6 +11,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
     color: #434455;
     text-decoration: none;
     list-style-type: none;
@@ -280,7 +281,7 @@ border-radius: 0px 0px 4px 4px
     color: #2E2F42;
 }
 
-.sec-four ul{
+.sec-four ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -306,7 +307,16 @@ border-radius: 0px 0px 4px 4px
     margin-bottom: 8px;
 }
 .list{
-    position: relative;
+}
+.device{
+}
+.device-wrap{    
+    position: relative;    
+    overflow: hidden;
+
+}
+.device:hover .cover-text{
+    transform: translateY(0);
 }
 .sec-four ul li div{
     border-left: 1px solid #E7E9FC;
@@ -324,6 +334,8 @@ border-radius: 0px 0px 4px 4px
     color: rgba(244, 244, 253, 1);
     background-color: rgba(77, 90, 229, 1);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    transform: translateY(100%);
+    transition: transform 300ms ease-in-out;
 }
 .api-desc{
     padding: 32px 16px;
